@@ -1,6 +1,6 @@
 const Discord = require('discord.js');
 const client = new Discord.Client({ intents: ['GUILDS', 'GUILD_MESSAGES']});
-const config = require("./config.json");
+//const config = require("./config.json");
 const cron = require('cron');
 
 client.on("ready", () => {
@@ -15,4 +15,4 @@ client.on("ready", () => {
     scheduledMessage.start()
 });
 
-client.login(config.token);
+client.login(process.env.DJS_TOKEN);
