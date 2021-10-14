@@ -4,7 +4,7 @@ const client = new Discord.Client({ intents: ['GUILDS', 'GUILD_MESSAGES']});
 const cron = require('cron');
 
 client.on("ready", () => {
-    console.log(`Online as ${client.user.tag}`);
+    console.log(`The client is ready!`);
 
     let scheduledMessage = new cron.CronJob('* 00 17 * * 5', () => {
         const guild = client.guilds.cache.get('817953590168649748');
