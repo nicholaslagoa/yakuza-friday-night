@@ -1,0 +1,15 @@
+{
+  "name": "yakuza-friday-night",
+  "version": "1.0.0",
+  "description": "",
+  "main": "bot.js",
+  "scripts": {
+    "test": "node src/bot.js"
+  },
+  "author": "nicholaslagoa",
+  "license": "ISC",
+  "dependencies": {
+    "cron": "^1.8.2",
+    "discord.js": "^13.2.0"
+  }
+}
